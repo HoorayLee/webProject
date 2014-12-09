@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style type="text/css">
+<!--
+body {
+	background-image: url(img/banner-bg.jpg);
+}
+-->
+</style></head>
+
+<body>
+<form id="form1" name="form1" method="post" action="/app/Search">
+  <label><br />
+当前只支持软件学院课程搜索：
+  </label>
+  <p>
+    <label>
+      <input type="radio" name="grade" value="2014" />
+      大一</label>
+    <br />
+    <label>
+      <input type="radio" name="grade" value="2013" />
+      大二</label>
+    <br />
+    <label>
+      <input type="radio" name="grade" value="2012" />
+      大三</label>
+    <br />
+    <label>
+      <input type="radio" name="grade" value="2011" />
+      大四</label>
+  </p>
+  <p>
+    <label></label>
+    课程名：
+  </p>
+  <p>
+    <label>
+    <input type="text" name="className" />
+    </label>
+  </p>
+  <p>
+    <label>
+    <input type="image" name="imageField2" src="button/search.gif" onclick="doChange()"> 
+    <script type="text/javascript"> 
+    function doChange(){ 
+       window.top.location.href= 'main.html'; 
+    } 
+    </script>
+    </label>
+  </p>
+  <label>  </label>
+</form>
+</body>
+</html>
