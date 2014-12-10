@@ -1,7 +1,6 @@
 drop table Users cascade;
 drop table File  cascade;
 drop table Comment cascade;
-drop table count cascade;
 CREATE TABLE Users
 (
 UserID VARCHAR(15) PRIMARY KEY,
@@ -34,8 +33,4 @@ FileID INT,
 Content VARCHAR(100),
 Comment_time DATETIME,
 CONSTRAINT fk_comment_file FOREIGN KEY(FileID) REFERENCES File(FileID)
-);
-CREATE table count
-(
-number int PRIMARY KEY AUTO_INCREMENT,
 );

@@ -58,7 +58,7 @@ public class FileUploadServlet extends HttpServlet {
       // item.getName()返回上传文件在客户端的完整路径名称
       System.out.println("上传文件的名称:" + item.getName());
 
-      File tempFile = new File("1.jpg");
+      File tempFile = new File("fork.java");
 
 
       File file = new File( savePath, tempFile.getName());
